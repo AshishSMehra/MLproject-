@@ -11,6 +11,7 @@ from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from src.exception import CustomException
 from src.logger import logging
 import os
+
 from src.utils import save_object
 
 @dataclass
@@ -24,6 +25,7 @@ class DataTransformation:
     def get_data_transformer_object(self):
         '''
         This function si responsible for data trnasformation
+        
         '''
         try:
             numerical_columns = ["writing_score", "reading_score"]
